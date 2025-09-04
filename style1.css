@@ -77,6 +77,7 @@ ul li a:hover {
   background-repeat: no-repeat;
   color: #fff;
   padding: 90px 0px;
+  background: url('../background-bg.jpg');
 }
 
 .fade-section {
@@ -268,6 +269,7 @@ footer ul li a:hover{
   background-color: transparent;
 
 }
+
 
 
 
