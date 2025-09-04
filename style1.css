@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.all-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #ff0000, #0000ff);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 5vw; /* Responsive font size */
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.all-cover nav .hamburgerMenu .icon{
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+nav ul li {
+  margin: 15px 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ul li a:hover {
+  background-color: rgb(126, 5, 238);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(126, 5, 238);
+  text-decoration-thickness: 5px;
+}
+
+
+.hero-section img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: contrast(1.2);
+  aspect-ratio: 1;
+  border-radius: 5%;
+  box-shadow: 0px 0px 0px 0.5px red;
+  position: relative;
+  z-index: -1;
+}
+
+.main-body {
+  background-image: url('../assets/img/background-bg.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 90px 0px;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.sec2,
+.sec3,
+.sec4{
+  padding: 80px 0;
+
+}
+
+.sec2 #about,
+.sec3 #projects,
+.sec4 #contact{
+  width: 70%;
+  margin-inline: auto;
+}
+
+.sec2 #about h3,
+.sec3 #projects h3,
+.sec4 #contact h3{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.sec2 #about p{
+  text-align: justify;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 150%;
+}
+
+.bigRec{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.recBox{
+  width: 32%;
+  height: 200px;
+  background-color: red;
+}
+
+.sec4 #contact p{text-align: center;}
+.sec4 #contact form{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.075);
+  padding: 15 20px;
+}
+.sec4 #contact form .input-group{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.sec4 #contact form .input-group input{
+  padding: 8px;
+  width: 100%;
+}
+.sec4 #contact form textarea{
+  width: 50%;
+  height: 350px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sec4 #contact form button{
+  padding: 8px 50px;
+}
+
+
+/* form starting from here */
+
+
+
+/* project starting from here */
+
+
+.project-list-items .dropdownList{
+  display: none;
+}
+
+.project-list-items.accordion .dropdownList{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+li.dropdownList-items{
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  /* float: left; */
+  margin: 0;
+  width: 32.399%;
+}
+a.dropdown-final{
+  color: black;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+a.dropdown-final img{
+  width: 120px;
+  height: 65px;
+  border: 1px solid black;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+
+footer{
+  padding: 120px 0;
+  background-color: black;
+  color: #fff;
+  /* margin-inline: auto; */
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+footer p::after{
+  content: '';
+  min-width: 35%;
+  width: 25%;
+  height: 0.5%;
+  display: block;
+  background: #f9f5f5;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 10px;  
+}
+
+footer .social-media {
+  margin-top: 20px;
+  padding: 30px 0 20px 0;
+}
+
+footer ul{
+  display: inline-block;
+  list-style-type: none;
+
+}
+footer ul li{
+  float: left;
+  margin: 0 20px;
+
+}
+footer ul li a {
+  display: inline-block;
+}
+footer ul li a:hover{
+  transform:  scale(1.5);
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+}
