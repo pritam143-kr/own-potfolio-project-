@@ -71,7 +71,7 @@ ul li a:hover {
 }
 
 .main-body {
-  background-image: url('../assets/img/background-bg.jpg');
+  background-image: url('background-bg.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -266,4 +266,5 @@ footer ul li a:hover{
   transform:  scale(1.5);
   transition: transform 0.3s ease-in-out;
   background-color: transparent;
+
 }
